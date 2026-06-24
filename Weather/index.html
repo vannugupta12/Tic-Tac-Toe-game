@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pro Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+
+        <div class="top-section">
+            <h2>Weather App</h2>
+            <button id="toggleMode">🌙</button>
+        </div>
+
+        <select id="citySelect">
+            <option value="">Select City</option>
+            <option value="delhi">Delhi</option>
+            <option value="mumbai">Mumbai</option>
+            <option value="shimla">Shimla</option>
+            <option value="kolkata">Kolkata</option>
+        </select>
+
+        <button id="searchBtn">Check Weather</button>
+
+        <div id="loader" class="loader"></div>
+
+        <div id="weatherBox" class="weatherBox">
+            <div id="icon" class="icon"></div>
+            <h3 id="cityName"></h3>
+            <p id="temperature"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
